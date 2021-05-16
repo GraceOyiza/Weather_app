@@ -4,7 +4,7 @@
 > This App gets the weather of a particular location and also the location of the user using the app.
 > A user can input the name of a city and the app retrieves the weather for that location.
 
-![screenshot](weather_screenshot.png)
+![screenshot](weatherapp.png)
 
 [Demo Link]()
 
