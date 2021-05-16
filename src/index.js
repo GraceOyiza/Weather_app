@@ -40,3 +40,6 @@ let weather = {
 document.querySelector('.search button').addEventListener('click', function () {
   weather.search();
 });
+
+const btnImg = document.querySelector('#btn-img');
+btnImg.src = searchIcon;
