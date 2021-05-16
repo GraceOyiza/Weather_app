@@ -6,7 +6,6 @@ body {
   margin: 0;
   background: #222;
   font-family: 'Open Sans', sans-serif;
-  background-image: url('https://source.unsplash.com/1600x900/?landscape ');
   font-size: 120%;
 }
 
@@ -39,6 +38,10 @@ button {
   transition: 0.2s ease-in-out;
 }
 
+#btn-img {
+  width: 25px;
+}
+
 input.search-bar {
   border: none;
   outline: none;
@@ -62,24 +65,4 @@ h1.temp {
 .description {
   text-transform: capitalize;
   margin-left: 8px;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.weather.loading {
-  visibility: hidden;
-  max-height: 20px;
-  position: relative;
-}
-
-.weather.loading:after {
-  visibility: visible;
-  content: 'Loading....';
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 20px;
 }
