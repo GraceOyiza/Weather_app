@@ -1,4 +1,5 @@
 import './scss/style.scss';
+import searchIcon from './images/search-icon.png';
 
 let weather = {
   apiKey: 'c20d664fe15511ff6b176f9e20df512f',
