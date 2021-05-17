@@ -49,6 +49,5 @@ document
     }
   });
 
-weather.fetchweather();
 const btnImg = document.querySelector('#btn-img');
 btnImg.src = searchIcon;
