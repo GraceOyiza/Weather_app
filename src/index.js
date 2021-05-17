@@ -3,17 +3,14 @@ import searchIcon from './images/search-icon.png';
 
 let weather = {
   apiKey: 'c20d664fe15511ff6b176f9e20df512f',
-  fetchweather: function (city) {
+  fetchweather: (city) => {
     fetch(
-      'http://api.openweathermap.org/data/2.5/weather?q= ' +
-        city +
-        '&units=metric&appid=' +
-        this.apiKey,
+      `http://api.openweathermap.org/data/2.5/weather?q= ${city}&APPID=${this.apiKey}&units=${unit}`,
     )
       .then((response) => response.json())
       .then((data) => this.displayweather(data));
   },
-  displayweather: function (data) {
+  displayweather: (data) => {
     const { name } = data;
     const { description } = data.weather[0];
     const { temp, humidity } = data.main;
@@ -32,7 +29,7 @@ let weather = {
     document.body.style.backgroundImage =
       "url('https://source.unsplash.com/1600x900/?" + name + " ')";
   },
-  search: function () {
+  search: () => {
     this.fetchweather(document.querySelector('.search-bar').value);
   },
 };
@@ -51,3 +48,17 @@ document
 
 const btnImg = document.querySelector('#btn-img');
 btnImg.src = searchIcon;
+
+// const celciusTofarenheit = (F = (temp * 9.0) / 5 + 32);
+
+// var checkBox = document.getElementById('myCheck');
+// // Get the output text
+// checkBox.addEventListener('click', () => {
+//   var text = document.getElementById('text');
+
+//   if (checkBox.checked == true) {
+//     text.style.display = 'block';
+//   } else {
+//     text.style.display = 'none';
+//   }
+// });

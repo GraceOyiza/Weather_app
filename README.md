@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 - cd Weather_app
 - run `npm install`
 - run `npm run build`
-- Open the index.html file with any browser of your choice.
+- Open the index.html file in the dist folder with any browser of your choice.
 
 ### for webpack run:
 
