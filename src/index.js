@@ -22,8 +22,11 @@ weatherForm.addEventListener('submit', (event) => {
       const windSpeed = unit === 'metric' ? 'km/h' : 'm/s';
 
       document.querySelector('.city').innerText = `Weather in ${name}`;
-      document.querySelector('.icon').src = 'https://openweathermap.org/img/wn/"+ icon +" 01n@.png';
-      document.querySelector('.description').innerText = `Cloudy${description}`;
+      document.querySelector('.icon').src =
+        'https://openweathermap.org/img/wn/"+ icon +" 01n@.png';
+      document.querySelector(
+        '.description',
+      ).innerText = `Cloudy: ${description}`;
       document.querySelector('.temp').innerText = temp + unitSymbol;
       document.querySelector(
         '.humidity',
