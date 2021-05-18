@@ -1,12 +1,22 @@
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 @import '~bootstrap/scss/bootstrap';
 
-// h1.temp {
-//   margin: 0;
-//   margin-bottom: 0.4em;
-// }
+body {
+  background: #222;
+  font-family: 'Open Sans', sans-serif;
+  font-size: large;
+}
 
-// .description {
-//   text-transform: capitalize;
-//   margin-left: 8px;
-// }
+.container {
+  margin-top: 30px;
+}
+
+.cardbody {
+  background: #000000d0;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  color: white;
+}
