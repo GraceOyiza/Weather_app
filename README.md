@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- Open a terminal and run the command ``
+- Open a terminal and run the command `git clone https://github.com/GraceOyiza/Weather_app.git`
 - cd Weather_app
 - run `npm install`
 - run `npm run build`
