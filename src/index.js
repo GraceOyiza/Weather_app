@@ -3,7 +3,7 @@ import './scss/style.scss';
 const weatherForm = document.getElementById('weather-form');
 const apiKey = 'c20d664fe15511ff6b176f9e20df512f';
 
-weatherForm.addEventListener('submit', (event) => {
+weatherForm.addEventListener('submit', async (event) => {
   event.preventDefault();
 
   const formData = new FormData(weatherForm);
@@ -11,7 +11,7 @@ weatherForm.addEventListener('submit', (event) => {
   const unit = formData.get('unit');
   const endpoint = `http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${apiKey}&units=${unit}`;
 
-  fetch(endpoint)
+  await fetch(endpoint)
     .then((response) => response.json())
     .then((data) => {
       const { name } = data;
@@ -22,8 +22,6 @@ weatherForm.addEventListener('submit', (event) => {
       const windSpeed = unit === 'metric' ? 'km/h' : 'm/s';
 
       document.querySelector('.city').innerText = `Weather in ${name}`;
-      document.querySelector('.icon').src =
-        'http://openweathermap.org/img/wn/"+ icon +" 01n@.png';
       document.querySelector(
         '.description',
       ).innerText = `Cloudy: ${description}`;
