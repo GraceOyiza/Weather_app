@@ -23,7 +23,7 @@ weatherForm.addEventListener('submit', (event) => {
 
       document.querySelector('.city').innerText = `Weather in ${name}`;
       document.querySelector('.icon').src =
-        'https://openweathermap.org/img/wn/"+ icon +" 01n@.png';
+        'http://openweathermap.org/img/wn/"+ icon +" 01n@.png';
       document.querySelector(
         '.description',
       ).innerText = `Cloudy: ${description}`;
@@ -35,6 +35,6 @@ weatherForm.addEventListener('submit', (event) => {
         '.wind',
       ).innerText = `Wind speed ${speed}${windSpeed}`;
       document.querySelector('.weather').classList.remove('Loading');
-      document.body.style.backgroundImage = `url('https://source.unsplash.com/1600x900/?${name} ')`;
+      document.body.style.backgroundImage = `url('http://source.unsplash.com/1600x900/?${name} ')`;
     });
 });
